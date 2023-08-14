@@ -1,109 +1,241 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
+.portal-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(34, 163, 255);
+  padding: 10px 20px;
+}
 
-.portal-navbar{
+i {
+  font-size: 20px;
+  margin-right: 30px;
+  animation: fadeIn 0.75s;
+}
+
+#notifs {
+  font-size: 30px;
+  transition: color 300ms;
+}
+
+#notifs:hover {
+  color: green;
+}
+
+#messages {
+  font-size: 30px;
+}
+
+#messages:hover {
+  color: green;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mmc-logo {
+  height: 50px;
+  animation: fadeIn 0.75s;
+}
+
+.profile-pic {
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 10px;
+  animation: fadeIn 0.75s;
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+  animation: fadeIn 0.75s;
+}
+
+span {
+  margin-right: 10px;
+}
+
+.nav-items i {
+  color: white;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 163, 255);
+  width: 200px;
+  padding: 20px 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.portal-logo {
+  height: 200px;
+  margin-bottom: 70px;
+  animation: fadeIn 0.75s;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 60px;
+  animation: fadeIn 0.75s;
+}
+
+a {
+  word-spacing: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 300ms;
+}
+
+a:hover {
+  color: green;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 20px;
+  margin-right: 60px;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 350px;
+  background-color: rgb(34, 163, 255);
+  border-radius: 30px;
+  animation: fadeIn 1s;
+}
+
+.account-container-1 {
+  display: flex;
+  padding: 20px 20px;
+  background-color: rgb(34, 163, 255);
+  border-radius: 10px;
+  width: 350px;
+  animation: fadeIn 1s;
+}
+
+.account-container-2 {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 20px;
+  background-color: rgb(2, 119, 14);
+  border-radius: 10px;
+  height: 55vh;
+  width: 350px;
+  animation: fadeIn 1s;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  color: white;
+  font-weight: bold;
+}
+
+.acc-img {
+  height: 80px;
+  border-radius: 50px;
+  border: 3px solid white;
+}
+
+.info-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  background-color: rgb(213, 213, 213);
+  animation: fadeIn 1s;
+}
+
+.mmc-logo-2{
+    height: 80px;
+}
+
+.report-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px;
+
+}
+
+table{
+    margin: 10px 20px;
+    border: 1px solid;
+    background-color: rgb(205, 205, 205);
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+tr:nth-child(even){
+    background-color: white;
+    text-align: left;
+}
+
+.report-2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: rgb(41, 173, 255);
 }
 
-.mmc-logo{
-    height: 50px;
-    animation: fadeIn 0.75s;
+.report-summary{
+    margin: 20px 20px;
 }
 
-.profile{
-    display: flex;
-    align-items: center;
+.summary-box{
+    padding: 10px 10px;
+    border: 3px solid black;
 }
-
-.nav-items{
-    display: flex;
-    align-items: center;
-    animation: fadeIn 0.75s;
-}
-
-i{
-    color: white;
-    margin-right: 30px;
-    font-size: 25px;
-    transition: color 300ms;
-}
-
-i:hover{
-    color: green;
-}
-
-.profile-pic{
-    height: 50px;
-    margin-right: 20px;
-    border-radius: 50%;
-}
-
-.name{
-    color: white;
-    font-weight: bold;
-}
-
-.dashboard-sample{
-    display: flex;
-    flex-direction: row;
-}
-
-.blue{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(41, 173, 255);
-    height: 100vh;
-    width: 300px;
-}
-
-.portal-logo{
-    height: 100px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    animation: fadeIn 0.75s;
-}
-
-li{
-    margin-bottom: 50px;
-    margin-top: 30px;
-    list-style: none;
-    color: white;
-    font-weight: bold;
-    animation: fadeIn 0.75s;
-}
-
-.red{
-    background-color: rgb(230, 230, 230);
-    width: 100%;
-}
-
-
-
-
-
-
-
-
 

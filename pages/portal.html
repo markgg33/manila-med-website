@@ -1,52 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMC Portal</title>
-    <link rel="icon" href="../images/mmedLogo.ico">
-    <link rel="stylesheet" href="../css/portal.css">
-    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
-    <link rel="stylesheet" href="../assets/fontawesome/webfonts/fa-brands-400.ttf">
-    <link rel="stylesheet" href="../assets/fontawesome/webfonts/fa-regular-400.ttf">
-    <link rel="stylesheet" href="../assets/fontawesome/webfonts/fa-solid-900.ttf">
-    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css">
-    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css">
+    <link rel="icon" href="../images/mmedLogo.ico" />
+    <link rel="stylesheet" href="../css/portal.css" />
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
+      rel="stylesheet"
+      href="../assets/fontawesome/webfonts/fa-brands-400.ttf"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome/webfonts/fa-regular-400.ttf"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome/webfonts/fa-solid-900.ttf"
+    />
+    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-container">
-        <div class="portal-navbar">
-            <a href="../index.html"><img src="../images/mmedLogo.png" alt="MMC Logo" class="mmc-logo"></a>
-            <div class="nav-items">
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-message"></i>
-                <div class="profile">
-                    <img src="../images/profile.png" alt="Blank Profile" class="profile-pic">
-                    <p class="name">My Account</p>
-                </div>
-            </div>
+      <div class="portal-navbar">
+        <img src="../images/mmedLogo.png" alt="MMC Logo" class="mmc-logo"/>
+        <div class="nav-items">
+          <i class="fa-solid fa-bell" id="notifs"></i>
+          <i class="fa-solid fa-message" id="messages"></i>
+          <div class="profile">
+            <img
+              src="../images/profile.png"
+              alt="Blank Profile"
+              class="profile-pic"
+            />
+            <p class="name">
+              My Account <span></span><i class="fa-solid fa-sort-down"></i>
+            </p>
+            <ul class="hover-list"></ul>
+          </div>
         </div>
-        <div class="dashboard-sample">
-            <div class="blue">
-                <img src="../images/portalLogo.png" alt="" class="portal-logo">
-                <ul>
-                    <li>DASHBOARD</li>
-                    <li>RECORDS</li>
-                    <li>DIAGNOSTICS</li>
-                    <li>LINKS</li>
-                </ul>
-            </div>
-            <div class="red">
-            </div>
+     </div>
+      <div class="info-container">
+        <div class="sidebar">
+          <img
+            src="../images/portalLogo.png"
+            alt="PORTAL LOGO"
+            class="portal-logo"
+          />
+          <ul class="side-items">
+            <li>
+              <a href=""><i class="fa-solid fa-table-columns"></i>DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-book"></i>RECORDS</a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-calendar-check"></i>APPOINTMENTS</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-gear"></i>SETTINGS</a>
+            </li>
+          </ul>
         </div>
+        <div class="info-section">
+          <div class="info-1">
+            <div class="account-container">
+              <img src="../images/profile.png" alt="account photo" class="acc-img"/>
+              <div class="acc-info">
+                <p class="acc-name"><strong>Name: </strong>Nate Beck</p>
+                <p class="acc-age"><strong>Age: </strong>26</p>
+                <p class="acc-gender"><strong>Gender: </strong>Female</p>
+                <p class="acc-num"><strong>Patient Number: </strong>23-10451</p>
+                <p class="acc-weight"><strong>Weight: </strong>125 lb</p>
+              </div>
+            </div>
+            <div class="account-container-1">
+                <p class="status"><strong>Status: </strong>Pending</p>
+              </div>
+              <div class="account-container-2">
+                <p class="status"><strong>SCHEDULE</strong></p>
+              </div>
+          </div>
+          </div>
+          <div class="info-2">
+            <div class="report-title">
+                <h1>MANILA MEDICAL CENTER REPORT</h1>
+                <img src="../images/mmedLogo.png" alt="MMC Logo" class="mmc-logo-2">
+            </div>
+            <table>
+                <tr>
+                    <th>DISCOVERY SET (n=1198)</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Cervical DNAme</td>
+                    <td>MAtched buccal DNAme</td>
+                    <td>Matched SNP</td>
+                </tr>
+                <tr>
+                    <td>Training Set</td>
+                    <td>Breast Cancer</td>
+                    <td>217</td>
+                    <td>-</td>
+                    <td>207</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Control</td>
+                    <td>572</td>
+                    <td>-</td>
+                    <td>536</td>
+                </tr>
+                <tr>
+                    <td>Internal Validation</td>
+                    <td>Breast Cancer</td>
+                    <td>112</td>
+                    <td>66</td>
+                    <td>107</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Control</td>
+                    <td>297</td>
+                    <td>69</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td></td>
+                    <td>1198</td>
+                    <td>135</td>
+                    <td>1130</td>
+                </tr>
+            </table>
+            <div class="report-2">
+                <table>
+                    <th>External Validation Set (n=338)</th>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Cervical DNAme</td>   
+                    </tr>
+                    <tr>
+                        <td>External Validation</td>
+                        <td>Breast Cancer</td>
+                        <td>113</td>   
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Control</td>
+                        <td>225</td>   
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                        <td>338</td>   
+                    </tr>
+                </table>
+                <table>
+                    <th>Endrometrial Cancer Set (n=514)</th>
+                    <tr>
+                        <td></td>
+                        <td>Cervical DNAme</td>   
+                    </tr>
+                    <tr>
+                        <td>Endometrial Cancer</td>
+                        <td>217</td>   
+                    </tr>
+                    <tr>
+                        <td>Control</td>
+                        <td>297</td>   
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>514</td>   
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <th>Ovarian Cancer Set (n=539)</th>
+                <tr>
+                    <td></td>
+                    <td>Cervical DNAme</td> 
+                </tr>
+                <tr>
+                    <td>Ovarian Cancer</td>
+                    <td>242</td>   
+                </tr>
+                <tr>
+                    <td>Control</td>
+                    <td>297</td>    
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>539</td>   
+                </tr>
+            </table>
+            <table>
+                <th>BRCA Set (n=227)</th>
+                <tr>
+                    <td></td>
+                    <td>Cervical DNAme</td>   
+                    <td>Matched buccal DNAme</td>
+                    <td>Matched blood DNAme</td>
+                </tr>
+                <tr>
+                    <td>BRCA 1</td>
+                    <td>57</td>
+                    <td>57</td>   
+                    <td>58</td>
+                </tr>
+                <tr>
+                    <td>BRCA 2</td>
+                    <td>53</td>
+                    <td>50</td>   
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td>Control</td>
+                    <td>114</td>
+                    <td>115</td>
+                    <td>116</td>   
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>224</td>
+                    <td>222</td>
+                    <td>227</td>   
+                </tr>
+            </table>
+            <div class="report-2">
+                <table>
+                    <th>Breast Tissue Sample (n=42)</th>
+                    <tr>
+                        <td>Normal from healthy women</td>
+                        <td>14</td> 
+                    </tr>
+                    <tr>
+                        <td>Normal from BRCA carriers</td>
+                        <td>14</td>   
+                    </tr>
+                    <tr>
+                        <td>Normal adjacent to triple negative breast cancer</td>
+                        <td>14</td>    
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>42</td>   
+                    </tr>
+                </table>
+                <table>
+                    <th>Samples from Swedish biobank (n=599)</th>
+                    <tr>
+                        <td>Cervical smears from healthy women</td>
+                        <td>316</td> 
+                    </tr>
+                    <tr>
+                        <td>Cervical smears from women diagnosed with breast cancer 1 to 5 years after collection</td>
+                        <td>242</td>   
+                    </tr>
+                </table>
+            </div>
+            <div class="report-summary">
+                <h3>Short Summary from the Reports</h3>
+                <p class="summary-box">
+                    As for checking the results of the patient, she indeed has NO CANCER, but still needs to 
+                    get some rest because of the test being conducted. 
+                </p>
+            </div>
+          </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
